@@ -6,7 +6,12 @@
         :center-value="centerValue"
         :sigma="sigma"
         :isEnoughData="this.isEnoughData"
-        class="chart"
+        class="chart chart--main"
+      />
+      <zoom-chart
+        :chart-data="pointsToTest"
+        :isEnoughData="this.isEnoughData"
+        class="chart chart--zoom"
       />
     </div>
   </div>
@@ -14,6 +19,7 @@
 
 <script>
 import spcChart from '@/assets/js/chart.js'
+import zoomChart from '@/assets/js/zoom-chart.js'
 import { countMean, countDeviation } from '@/assets/js/operationsHelpers.js'
 
 export default {
@@ -32,7 +38,8 @@ export default {
     }
   },
   components: {
-    spcChart
+    spcChart,
+    zoomChart
   },
   computed: {
     centerValue () {
@@ -58,5 +65,10 @@ export default {
 
   .chart {
     cursor: e-resize;
+  }
+
+  .chart--zoom {
+    height: 70px;
+    padding-left: 50px;
   }
 </style>

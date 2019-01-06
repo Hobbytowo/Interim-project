@@ -67,29 +67,25 @@ export default {
         maintainAspectRatio: false,
         legend: { display: false },
         annotation: createAnnotations(this.centerValue, this.valueUCL, this.valueLCL, this.sigma),
-        // zoom
         scales: {
           xAxes: [{
             ticks: {
-              beginAtZero: true,
-              min: this.chartData.length - 25,
+              min: this.chartData.length - 40,
               max: this.chartData.length - 1,
-              stepSize: 0.4
-            },
-            scaleLabel: {
-              display: true
+              autoSkipPadding: 10
             }
           }]
         },
         pan: {
           enabled: true,
-          mode: 'x'
+          mode: 'x',
+          onPan () { console.log('onPan') }
         },
         zoom: {
           enabled: true,
           mode: 'x',
+          onZoom () { console.log('onZoom') }
         }
-        // e.o zoom
       })
       // e/o options
     }
