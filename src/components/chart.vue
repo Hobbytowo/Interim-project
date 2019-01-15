@@ -65,10 +65,14 @@ export default {
 
   .chart {
     cursor: e-resize;
-  }
 
-  .chart--zoom {
-    height: 70px;
-    padding-left: 50px;
+    &--main {
+      margin-bottom: 30px;
+    }
+
+    &--zoom {
+      height: 100px;
+      padding-left: 50px;
+    }
   }
 </style>

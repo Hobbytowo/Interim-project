@@ -40,9 +40,8 @@ export default {
         scales: {
           xAxes: [{
             ticks: {
-              autoSkipPadding: 10
-            },
-            display: false
+              autoSkipPadding: 20
+            }
           }],
           yAxes: [{
             display: false
@@ -54,7 +53,7 @@ export default {
           type: "box",
           xScaleID: "x-axis-0",
           yScaleID: "y-axis-0",
-          xMin: this.chartData.length - 40,
+          xMin: this.chartData.length - 15,
           xMax: this.chartData.length - 1,
           backgroundColor: "rgba(0, 0, 0, 0.2)",
           borderWidth: 0
