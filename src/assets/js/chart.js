@@ -70,7 +70,7 @@ export default {
         scales: {
           xAxes: [{
             ticks: {
-              min: this.chartData.length - 40,
+              min: this.chartData.length - 15,
               max: this.chartData.length - 1,
               autoSkipPadding: 10
             }
@@ -78,13 +78,13 @@ export default {
         },
         pan: {
           enabled: true,
-          mode: 'x',
-          onPan () { console.log('onPan') }
+          mode: 'x'
+          // onPan () { console.log('onPan') }
         },
         zoom: {
           enabled: true,
-          mode: 'x',
-          onZoom () { console.log('onZoom') }
+          mode: 'x'
+          // onZoom () { console.log('onZoom') }
         }
       })
       // e/o options
