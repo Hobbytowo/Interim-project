@@ -17,7 +17,7 @@
     "chartjs-plugin-zoom": "^0.6.6",
     "chokidar": "^2.0.4",
     "csv-parse": "^4.3.0",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "node-sass": "^4.14.1",
     "vue": "^2.5.17",
     "vue-chartjs": "^3.4.0",
