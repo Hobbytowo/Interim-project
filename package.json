@@ -11,7 +11,7 @@
     "postinstall": "electron-builder install-app-deps"
   },
   "dependencies": {
-    "ajv": "^6.0.0",
+    "ajv": "^6.12.3",
     "chart.js": "^2.7.3",
     "chartjs-plugin-annotation": "^0.5.7",
     "chartjs-plugin-zoom": "^0.6.6",
